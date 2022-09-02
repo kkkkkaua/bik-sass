@@ -11,6 +11,11 @@
 
 .contato_form {
 	padding-right: 60px;
+
+	@include d(m) {
+		padding-right: 0px;
+		margin-bottom: 40px;
+	}
 }
 
 .contato_form label{
@@ -51,7 +56,7 @@
 }
 
 .orcamento_dados {
-	color: #fff;
+	color:  $branco;
 }
 
 .contato_dados h3{
