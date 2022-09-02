@@ -5,9 +5,7 @@ body {
 }
 
 p {
-	font-family: Georgia, "Times New Roman", serif;
-	font-size: 14px;
-	line-height: 20px;
+	@include tipo-2(14);
 }
 
 img {
@@ -20,10 +18,10 @@ img {
 }
 
 #form-erro span, #form-send span  {
-	font-size: 18px;
-	line-height: 25px;
 	margin-bottom: 10px;
 	display: block;
+	
+	@include tipo-1(18);
 }
 
 #form-send {
@@ -35,15 +33,15 @@ img {
 }
 
 .btn {
-	border: 3px solid #fec63e;
+	border: 3px solid  $amarelo;
 	padding: 10px 30px;
-	color: #fec63e;
-	font-size: 14px;
-	line-height: 20px;
+	transition: all .5s ease;
+	
+	@include tipo-1(14);
+	letter-spacing: .1em;
 	text-transform: uppercase;
 	font-weight: bold;
-	letter-spacing: .1em;
-	transition: all .5s ease;
+	color:  $amarelo;
 }
 
 .btn:hover {
@@ -57,14 +55,14 @@ img {
 }
 
 .subtitulo {
-	font-size: 24px;
-	line-height: 30px;
 	font-weight: bold;
 	letter-spacing: .1em;
 	color: #000;
 	text-transform: uppercase;
 	text-align: center;
 	margin-bottom: 40px;
+	
+	@include tipo-1(24);
 }
 
 .subtitulo:after {
@@ -77,13 +75,13 @@ img {
 }
 
 .subtitulo-interno {
-	font-size: 24px;
-	line-height: 30px;
 	font-weight: bold;
 	letter-spacing: .1em;
 	color: #000;
 	text-transform: uppercase;
 	margin-bottom: 20px;
+	
+	@include tipo-1(24);
 }
 
 .subtitulo-interno:after {
@@ -101,7 +99,7 @@ img {
 	position: fixed;
 	top: 0;
 	width: 100%;
-	background: #fec63e; /* Amarelo */
+	background:  $amarelo; /* Amarelo */
 	padding: 15px 0;
 	z-index: 10;
 }
@@ -121,10 +119,10 @@ img {
 	font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: .1em;
-	font-size: 14px;
-	line-height: 20px;
 	padding: 10px 0;
 	transition: all .3s ease;
+
+	@include tipo-1(14);
 }
 
 .header_menu ul li a:hover {
@@ -148,10 +146,11 @@ img {
 }
 
 .introducao h1 {
-	font-size: 48px;
 	color: #FFF;
 	font-weight: bold;
 	text-transform: uppercase;
+
+	@include tipo-1(48);
 }
 
 .quote-externo {
@@ -177,8 +176,9 @@ img {
 .quote-externo cite {
 	font-style: normal;
 	font-weight: bold;
-	font-size: 14px;
 	letter-spacing: .1em;
+
+	@include tipo-1(14);
 }
 
 /*Introducao Interna*/
@@ -193,9 +193,10 @@ img {
 }
 
 .introducao-interna h1 {
-	font-size: 36px;
 	font-weight: bold;
 	text-transform: uppercase;
+
+	@include tipo-1(36);
 }
 
 .introducao-interna h1:after {
@@ -215,7 +216,7 @@ img {
 }
 
 .produtos_lista li{
-	background: #fec63e;
+	background:  $amarelo;
 	text-align: center;
 }
 
@@ -225,11 +226,11 @@ img {
 
 .produtos_lista li h3{
 	font-weight: bold;
-	font-size: 18px;
-	line-height: 25px;
 	text-transform: uppercase;
 	letter-spacing: .1em;
 	margin-top: 20px;
+
+	@include tipo-1(18);
 }
 
 .produtos_lista li h3:after{
@@ -269,11 +270,11 @@ img {
 }
 
 .portfolio .subtitulo {
-	color: #fec63e;
+	color:  $amarelo;
 }
 
 .portfolio .subtitulo:after {
-	background: #fec63e;
+	background:  $amarelo;
 }
 
 .portfolio_lista div:last-of-type {
@@ -318,11 +319,11 @@ img {
 
 .qualidade_lista li h3{
 	font-weight: bold;
-	font-size: 18px;
-	line-height: 25px;
 	text-transform: uppercase;
 	letter-spacing: .1em;
 	margin-top: 20px;
+
+	@include tipo-1(18);
 }
 
 .qualidade_lista li h3:after{
@@ -359,12 +360,11 @@ img {
 }
 
 .footer h3 {
-	font-size: 18px;
-	line-height: 25px;
-	color: #fec63e;
+	color:  $amarelo;
 	text-transform: uppercase;
 	letter-spacing: .1em;
 	font-weight: bold;
+	@include tipo-1(18);
 }
 
 .footer h3:after {
@@ -372,7 +372,7 @@ img {
 	display: block;
 	width: 60px;
 	height: 3px;
-	background: #fec63e;
+	background:  $amarelo;
 	margin: 6px 0 12px 0;
 }
 
@@ -381,9 +381,7 @@ img {
 }
 
 .footer_contato ul li {
-	font-size: 14px;
-	line-height: 20px;
-	font-family: Georgia, "Times New Roman", serif;
+	@include tipo-2(14);
 }
 
 .footer_redes ul li {
@@ -392,7 +390,7 @@ img {
 }
 
 .footer_redes ul li a {
-	border: 3px solid #fec63e;
+	border: 3px solid  $amarelo;
 	display: block;
 	padding: 10px;
 	transition: all .5s ease;
@@ -404,7 +402,7 @@ img {
 
 .copy {
 	width: 100%;
-	background: #fec63e;
+	background:  $amarelo;
 	padding: 20px 0;
 }
 
